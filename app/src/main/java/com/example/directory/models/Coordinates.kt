@@ -1,6 +1,8 @@
 package com.example.directory.models
 
+import com.google.gson.annotations.SerializedName
+
 data class Coordinates(
-    val lat: Double,
-    val lng: Double
+    @SerializedName("lat") val lat: Double,
+    @SerializedName("lng") val lng: Double
 )

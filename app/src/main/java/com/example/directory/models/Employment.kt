@@ -1,6 +1,8 @@
 package com.example.directory.models
 
+import com.google.gson.annotations.SerializedName
+
 data class Employment(
-    val key_skill: String,
-    val title: String
+    @SerializedName("key_skill") val keySkill: String,
+    @SerializedName("title") val title: String
 )

@@ -1,5 +1,7 @@
 package com.example.directory.models
 
+import com.google.gson.annotations.SerializedName
+
 data class CreditCard(
-    val cc_number: String
+    @SerializedName("cc_number") val ccNumber: String
 )
